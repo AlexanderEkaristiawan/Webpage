@@ -1,335 +1,518 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>APINDO – Asosiasi Pengusaha Indonesia</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APINDO – Asosiasi Pengusaha Indonesia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="nav-logo">
+        <img src="../Asset/logo.png" alt="APINDO Logo" class="logo-img" />
+        <div class="nav-name">
+          <span>ASOSIASI PENGUSAHA INDONESIA</span>
+          <span>Provinsi Bali</span>
+        </div>
+      </a>
 
-  <!-- ── NAVBAR ── -->
-  <nav>
-<a href="#" class="nav-logo">
-      <img src="../Asset/logo.png" alt="APINDO Logo" class="logo-img" />
-      <div class="nav-name">
-        <span>ASOSIASI PENGUSAHA INDONESIA</span>
-        <span>Provinsi Bali</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#what-we-do">What We Do</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="../SponsorshipPage/index.html">Sponsorship</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
       </div>
-    </a>
+    </nav>
 
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#what-we-do">What We Do</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="../SponsorshipPage/index.html">Sponsorship</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" onclick="toggleMenu()">About</a>
+      <a href="#what-we-do" onclick="toggleMenu()">What We Do</a>
+      <a href="#news" onclick="toggleMenu()">News</a>
+      <a href="../SponsorshipPage/index.html" onclick="toggleMenu()"
+        >Sponsorship</a
+      >
+      <a href="#contact" onclick="toggleMenu()">Contact</a>
     </div>
-  </nav>
 
-  <!-- Mobile menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#about"      onclick="toggleMenu()">About</a>
-    <a href="#what-we-do" onclick="toggleMenu()">What We Do</a>
-    <a href="#news"       onclick="toggleMenu()">News</a>
-    <a href="../SponsorshipPage/index.html" onclick="toggleMenu()">Sponsorship</a>
-    <a href="#contact"    onclick="toggleMenu()">Contact</a>
-  </div>
-
-  <!-- ── NEWS TICKER ── -->
-  <div class="ticker-wrap" id="news">
-    <div class="ticker">
-      <span>Joint Announcement on the Substantive Conclusion of the Indonesia–EU Comprehensive Economic Partnership Agreement (EU-CEPA)</span>
-      <span>APINDO mendukung pertumbuhan ekonomi berkelanjutan Indonesia</span>
-      <span>Pertemuan Dewan Pengusaha APINDO – Q2 2025</span>
-      <span>Forum Ketenagakerjaan Nasional – Jakarta, Juni 2025</span>
+    <div class="ticker-wrap" id="news">
+      <div class="ticker">
+        <span
+          >Joint Announcement on the Substantive Conclusion of the Indonesia–EU
+          Comprehensive Economic Partnership Agreement (EU-CEPA)</span
+        >
+        <span
+          >APINDO mendukung pertumbuhan ekonomi berkelanjutan Indonesia</span
+        >
+        <span>Pertemuan Dewan Pengusaha APINDO – Q2 2025</span>
+        <span>Forum Ketenagakerjaan Nasional – Jakarta, Juni 2025</span>
+      </div>
     </div>
-  </div>
 
-<!-- ── HERO ── -->
-  <section class="hero" id="about">
-    <!-- Decorative flower corners -->
-    <img src="../Asset/flower_corner.png" alt="" class="flower-corner flower-corner-top" />
-    <img src="../Asset/flower_corner.png" alt="" class="flower-corner flower-corner-bottom" />
-    
-    <div class="hero-inner">
-      
-      <p class="tagline">Entrepreneurs Union · Indonesia Advances</p>
-      <img src="../Asset/fullLogo_whitebg.png" alt="APINDO Logo" class="hero-logo" />
-      
-      <p class="desc">
-        The official employers' organisation of Indonesia, representing businesses
-        in industrial relations, manpower affairs, and economic policy —
-        everything you need to know.
+    <section class="hero" id="about">
+      <img
+        src="../Asset/flower_corner.png"
+        alt=""
+        class="flower-corner flower-corner-top"
+      />
+      <img
+        src="../Asset/flower_corner.png"
+        alt=""
+        class="flower-corner flower-corner-bottom"
+      />
+
+      <div class="hero-inner">
+        <p class="tagline">Entrepreneurs Union · Indonesia Advances</p>
+        <img
+          src="../Asset/fullLogo_whitebg.png"
+          alt="APINDO Logo"
+          class="hero-logo"
+        />
+
+        <p class="desc">
+          The official employers' organisation of Indonesia, representing
+          businesses in industrial relations, manpower affairs, and economic
+          policy — everything you need to know.
+        </p>
+        <a href="#what-we-do" class="btn btn-gold">Learn More</a>
+      </div>
+    </section>
+
+    <section class="team">
+      <p class="section-label">Leadership</p>
+      <h2>Our Founder</h2>
+
+      <div class="team-img-wrap">
+        <img src="../asset/group_photo.png" alt="APINDO Leadership Team" />
+      </div>
+    </section>
+
+    <section class="founder">
+      <h1>Our Board & Leaders</h2>
+      <div class="founders-grid">
+        <div class="founder-card">
+          <img
+            src="../asset/group_photo.png"
+            alt="APINDO Leadership Team"
+            class="founder-img"
+          />
+          <h3 class="founder-role">Apindo Bali Founder</h3>
+          <p class="founder-name">AAAAA</p>
+        </div>
+
+        <div class="founder-card">
+          <img
+            src="../asset/group_photo.png"
+            alt="APINDO Leadership Team"
+            class="founder-img"
+          />
+          <h3 class="founder-role">Apindo Founder</h3>
+          <p class="founder-name">AAAAA</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="what" id="what-we-do">
+      <p class="section-label">Our Mission</p>
+      <h2>What We Do</h2>
+      <p class="intro">
+        The official employers' organisation of Indonesia, representing
+        businesses in industrial relations, manpower affairs, and economic
+        policy — everything you need to know.
       </p>
-      <a href="#what-we-do" class="btn btn-gold">Learn More</a>
-     
-    </div>
-  </section>
 
-  <!-- ── TEAM PHOTO ── -->
-  <section class="team">
-    <p class="section-label">Leadership</p>
-    <h2>Our Board & Leaders</h2>
-
-    <div class="team-img-wrap">
-       <img src="../asset/group_photo.png" alt="APINDO Leadership Team" /> 
-      
-    </div>
-  </section>
-
-  
-
-  <!-- ── WHAT WE DO ── -->
-  <section class="what" id="what-we-do">
-    <p class="section-label">Our Mission</p>
-    <h2>What We Do</h2>
-    <p class="intro">
-      The official employers' organisation of Indonesia, representing businesses
-      in industrial relations, manpower affairs, and economic policy —
-      everything you need to know.
-    </p>
-
-    <div class="pillars">
-      <div class="pillar">
-        <div class="pillar-icon">
-          <svg width="22" height="22" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
-          </svg>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg
+              width="22"
+              height="22"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+            </svg>
+          </div>
+          <h3>Industrial Relations</h3>
+          <p>
+            Facilitating harmonious relations between employers and employees to
+            foster productive workplaces across Indonesia.
+          </p>
         </div>
-        <h3>Industrial Relations</h3>
-        <p>Facilitating harmonious relations between employers and employees to foster productive workplaces across Indonesia.</p>
-      </div>
 
-      <div class="pillar">
-        <div class="pillar-icon">
-          <svg width="22" height="22" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-          </svg>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg
+              width="22"
+              height="22"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3>Manpower Affairs</h3>
+          <p>
+            Advocating fair labour standards, workforce development, and social
+            protection policies for a resilient economy.
+          </p>
         </div>
-        <h3>Manpower Affairs</h3>
-        <p>Advocating fair labour standards, workforce development, and social protection policies for a resilient economy.</p>
-      </div>
 
-      <div class="pillar">
-        <div class="pillar-icon">
-          <svg width="22" height="22" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24">
-            <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
-          </svg>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg
+              width="22"
+              height="22"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <line x1="12" y1="1" x2="12" y2="23" />
+              <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+            </svg>
+          </div>
+          <h3>Economic Policy</h3>
+          <p>
+            Engaging government and stakeholders to shape policies that
+            stimulate sustainable business growth nationwide.
+          </p>
         </div>
-        <h3>Economic Policy</h3>
-        <p>Engaging government and stakeholders to shape policies that stimulate sustainable business growth nationwide.</p>
-      </div>
 
-      <div class="pillar">
-        <div class="pillar-icon">
-          <svg width="22" height="22" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
-            <path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/>
-          </svg>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg
+              width="22"
+              height="22"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
+            </svg>
+          </div>
+          <h3>Global Partnerships</h3>
+          <p>
+            Building international business networks and advocating for
+            Indonesia in global trade forums, including EU-CEPA.
+          </p>
         </div>
-        <h3>Global Partnerships</h3>
-        <p>Building international business networks and advocating for Indonesia in global trade forums, including EU-CEPA.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── Statistics ── -->
-  <section class="stats" aria-labelledby="stats-heading">
-    <div class="stats-shell">
-      <div class="stats-head">
-        <p class="section-label">APINDO Snapshot</p>
-        <h2 id="stats-heading">APINDO by the Numbers</h2>
-        <p class="stats-intro">
-          Official figures published by APINDO show the scale of its national network,
-          international reach, and current flagship initiatives.
+    <section class="stats" aria-labelledby="stats-heading">
+      <div class="stats-shell">
+        <div class="stats-head">
+          <p class="section-label">APINDO Snapshot</p>
+          <h2 id="stats-heading">APINDO by the Numbers</h2>
+          <p class="stats-intro">
+            Official figures published by APINDO show the scale of its national
+            network, international reach, and current flagship initiatives.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span class="stat-value" data-count-to="34">0</span>
+            <h3>Provincial Boards <sup>[1]</sup></h3>
+            <p>APINDO states it has DPP representation in 34 provinces.</p>
+          </article>
+
+          <article class="stat-card">
+            <span class="stat-value" data-count-to="350">0</span>
+            <h3>City/Regency Boards <sup>[1]</sup></h3>
+            <p>
+              Its national structure includes 350 boards at the city and regency
+              level.
+            </p>
+          </article>
+
+          <article class="stat-card">
+            <span class="stat-value" data-count-to="3">0</span>
+            <h3>Global Employer Networks <sup>[1]</sup></h3>
+            <p>APINDO lists membership in IOE, ACE, and CAPE.</p>
+          </article>
+
+          <article class="stat-card">
+            <span class="stat-value" data-count-to="4">0</span>
+            <h3>Flagship Programs <sup>[1]</sup></h3>
+            <p>APINDO 2023-2028 highlights four core action programs.</p>
+          </article>
+
+          <article class="stat-card">
+            <span class="stat-value" data-count-to="1000">0</span>
+            <h3>KIPAS Entrepreneurs <sup>[1]</sup></h3>
+            <p>
+              The KIPAS anti-stunting initiative is described as involving 1,000
+              entrepreneurs.
+            </p>
+          </article>
+        </div>
+
+        <p class="stats-source">
+          Reference [1]:
+          <a
+            href="https://apindo.or.id/id/apindo/history"
+            target="_blank"
+            rel="noopener"
+          >
+            APINDO - Sejarah
+          </a>
+          (official APINDO history page, accessed May 2, 2026).
         </p>
       </div>
+    </section>
 
-      <div class="stats-grid">
-        <article class="stat-card">
-          <span class="stat-value" data-count-to="34">0</span>
-          <h3>Provincial Boards <sup>[1]</sup></h3>
-          <p>APINDO states it has DPP representation in 34 provinces.</p>
-        </article>
+    <section class="press">
+      <span class="press-label">Press Conference</span>
+      <h2>
+        Joint Announcement on the Substantive Conclusion of the Indonesia–EU
+        Comprehensive Economic Partnership Agreement (EU-CEPA)
+      </h2>
 
-        <article class="stat-card">
-          <span class="stat-value" data-count-to="350">0</span>
-          <h3>City/Regency Boards <sup>[1]</sup></h3>
-          <p>Its national structure includes 350 boards at the city and regency level.</p>
-        </article>
+      <div class="press-img-wrap">
+        <div class="press-img-placeholder">
+          <svg
+            width="48"
+            height="48"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+          >
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <circle cx="9" cy="9" r="2" />
+            <path d="M21 15l-5-5L5 21" />
+          </svg>
+          <span
+            >Press Conference Photo<br /><small
+              >Replace with actual image: press-conference.jpg</small
+            ></span
+          >
+        </div>
 
-        <article class="stat-card">
-          <span class="stat-value" data-count-to="3">0</span>
-          <h3>Global Employer Networks <sup>[1]</sup></h3>
-          <p>APINDO lists membership in IOE, ACE, and CAPE.</p>
-        </article>
-
-        <article class="stat-card">
-          <span class="stat-value" data-count-to="4">0</span>
-          <h3>Flagship Programs <sup>[1]</sup></h3>
-          <p>APINDO 2023-2028 highlights four core action programs.</p>
-        </article>
-
-        <article class="stat-card">
-          <span class="stat-value" data-count-to="1000">0</span>
-          <h3>KIPAS Entrepreneurs <sup>[1]</sup></h3>
-          <p>The KIPAS anti-stunting initiative is described as involving 1,000 entrepreneurs.</p>
-        </article>
-      </div>
-
-      <p class="stats-source">
-        Reference [1]:
-        <a href="https://apindo.or.id/id/apindo/history" target="_blank" rel="noopener">
-          APINDO - Sejarah
+        <a
+          class="wa-badge"
+          href="https://wa.me/?text=Baca%20lebih%20lanjut%20tentang%20konferensi%20pers%20APINDO%20di%20apindo.or.id"
+          target="_blank"
+          rel="noopener"
+          aria-label="Share on WhatsApp"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+            />
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.657 1.438 5.168L2 22l4.992-1.412A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.5a8.48 8.48 0 01-4.319-1.175l-.31-.184-3.207.906.907-3.117-.2-.32A8.5 8.5 0 1112 20.5z"
+            />
+          </svg>
         </a>
-        (official APINDO history page, accessed May 2, 2026).
-      </p>
-    </div>
-  </section>
-
-  <!-- ── PRESS CONFERENCE ── -->
-  <section class="press">
-    <span class="press-label">Press Conference</span>
-    <h2>Joint Announcement on the Substantive Conclusion of the Indonesia–EU Comprehensive Economic Partnership Agreement (EU-CEPA)</h2>
-
-    <div class="press-img-wrap">
-      <!--
-        ★ ACTION REQUIRED ★
-        Replace this placeholder with the actual press conference photo.
-        Save the image as "press-conference.jpg" in the same folder as index.html,
-        then uncomment the <img> tag below and delete the placeholder <div>.
-      -->
-      <!-- <img src="press-conference.jpg" alt="Press Conference – Indonesia EU CEPA" /> -->
-      <div class="press-img-placeholder">
-        <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
-        <span>Press Conference Photo<br><small>Replace with actual image: press-conference.jpg</small></span>
       </div>
+    </section>
 
-      <!-- WhatsApp share button -->
-      <a class="wa-badge"
-         href="https://wa.me/?text=Baca%20lebih%20lanjut%20tentang%20konferensi%20pers%20APINDO%20di%20apindo.or.id"
-         target="_blank" rel="noopener" aria-label="Share on WhatsApp">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff">
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-          <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.657 1.438 5.168L2 22l4.992-1.412A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.5a8.48 8.48 0 01-4.319-1.175l-.31-.184-3.207.906.907-3.117-.2-.32A8.5 8.5 0 1112 20.5z"/>
-        </svg>
-      </a>
-    </div>
-  </section>
+    <section class="cta-membership">
+      <div class="cta-inner">
+        <h2>
+          Get the Latest Business Information, Regulations, and Other Benefits
+          as an APINDO Member
+        </h2>
+        <a href="#contact" class="btn btn-gold">More Info</a>
+      </div>
+    </section>
 
-  
+    <footer id="contact">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../Asset/logo.png" alt="APINDO Logo" class="footer-logo" />
+          <h3>APINDO</h3>
+          <p>
+            Entrepreneurs Union · Indonesia Advances<br />© 2025 APINDO. All
+            rights reserved.
+          </p>
+          <div class="footer-socials">
+            <a class="social-btn" href="#" aria-label="Facebook">
+              <svg width="16" height="16" fill="#fff" viewBox="0 0 24 24">
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                />
+              </svg>
+            </a>
+            <a class="social-btn" href="#" aria-label="Instagram">
+              <svg
+                width="16"
+                height="16"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a class="social-btn" href="#" aria-label="Twitter">
+              <svg width="16" height="16" fill="#fff" viewBox="0 0 24 24">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
 
-  <!-- ── CALL TO ACTION ── -->
-  <section class="cta-membership">
-    <div class="cta-inner">
-      <h2>Get the Latest Business Information, Regulations, and Other Benefits as an APINDO Member</h2>
-      <a href="#contact" class="btn btn-gold">More Info</a>
-    </div>
-  </section>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>
+              <svg
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+              <a href="#about">About APINDO</a>
+            </li>
+            <li>
+              <svg
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+              <a href="#what-we-do">What We Do</a>
+            </li>
+            <li>
+              <svg
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+              <a href="#news">News & Media</a>
+            </li>
+            <li>
+              <svg
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+              <a href="../SponsorshipPage/index.html">Sponsorship</a>
+            </li>
+          </ul>
+        </div>
 
-  <!-- ── FOOTER ── -->
-  <footer id="contact">
-    <div class="footer-grid">
-<!-- Brand -->
-      <div class="footer-brand">
-        <img src="../Asset/logo.png" alt="APINDO Logo" class="footer-logo" />
-        <h3>APINDO</h3>
-        <p>Entrepreneurs Union · Indonesia Advances<br>© 2025 APINDO. All rights reserved.</p>
-        <div class="footer-socials">
-          <!-- Facebook -->
-          <a class="social-btn" href="#" aria-label="Facebook">
-            <svg width="16" height="16" fill="#fff" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-          </a>
-          <!-- Instagram -->
-          <a class="social-btn" href="#" aria-label="Instagram">
-            <svg width="16" height="16" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <!-- Twitter/X -->
-          <a class="social-btn" href="#" aria-label="Twitter">
-            <svg width="16" height="16" fill="#fff" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <svg
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <a href="mailto:apindobali@gmail.com">apindobali@gmail.com</a>
+            </li>
+            <li>
+              <svg
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Jl. Masjid No. 3, Renon,<br />Denpasar, Bali 80235
+            </li>
+            <li>
+              <svg
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.1a16 16 0 006 6l.62-.62a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
+                />
+              </svg>
+              +0321 – 0370 0945
+            </li>
+          </ul>
         </div>
       </div>
 
-      <!-- Quick Links -->
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li>
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-            <a href="#about">About APINDO</a>
-          </li>
-          <li>
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-            <a href="#what-we-do">What We Do</a>
-          </li>
-          <li>
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-            <a href="#news">News & Media</a>
-          </li>
-          <li>
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-            <a href="../SponsorshipPage/index.html">Sponsorship</a>
-          </li>
-        </ul>
+      <div class="footer-bottom">
+        © 2025 APINDO – Asosiasi Pengusaha Indonesia · Entrepreneurs Union,
+        Indonesia Advances
       </div>
+    </footer>
 
-      <!-- Contact -->
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li>
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <!--
-              ★ ACTION REQUIRED ★
-              Replace with the real email address below.
-            -->
-            <a href="mailto:apindobali@gmail.com">apindobali@gmail.com</a>
-          </li>
-          <li>
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <!--
-              ★ ACTION REQUIRED ★
-              Update with the real office address below.
-            -->
-            Jl. Masjid No. 3, Renon,<br>Denpasar, Bali 80235
-          </li>
-          <li>
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.1a16 16 0 006 6l.62-.62a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-            <!--
-              ★ ACTION REQUIRED ★
-              Update the phone number below.
-            -->
-            +0321 – 0370 0945
-          </li>
-        </ul>
-      </div>
-    </div>
+    <a
+      class="wa-fab"
+      href="https://wa.me/?text=Baca%20lebih%20anjut%20tentang%20APINDO%20di%20apindo.or.id"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+        />
+        <path
+          d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.657 1.438 5.168L2 22l4.992-1.412A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.5a8.48 8.48 0 01-4.319-1.175l-.31-.184-3.207.906.907-3.117-.2-.32A8.5 8.5 0 1112 20.5z"
+        />
+      </svg>
+    </a>
 
-    <div class="footer-bottom">
-      © 2025 APINDO – Asosiasi Pengusaha Indonesia · Entrepreneurs Union, Indonesia Advances
-    </div>
-  </footer>
-
-<!-- Sticky WhatsApp FAB -->
-  <a class="wa-fab"
-     href="https://wa.me/?text=Baca%20lebih%20anjut%20tentang%20APINDO%20di%20apindo.or.id"
-     target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-      <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.657 1.438 5.168L2 22l4.992-1.412A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.5a8.48 8.48 0 01-4.319-1.175l-.31-.184-3.207.906.907-3.117-.2-.32A8.5 8.5 0 1112 20.5z"/>
-    </svg>
-  </a>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
