@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APINDO Sponsorship | Proposal & Application</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="../Landing%20Page/index.html" class="nav-logo">
+      <div class="logo-badge">APIN<br>DO</div>
+      <div class="nav-name">
+        <span>APINDO</span>
+        <span>Asosiasi Pengusaha Indonesia</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="../Landing%20Page/index.html#about">About</a></li>
+      <li><a href="../Landing%20Page/index.html#what-we-do">What We Do</a></li>
+      <li><a href="../Landing%20Page/index.html#news">News</a></li>
+      <li><a href="index.html" class="active">Sponsorship</a></li>
+      <li><a href="../Landing%20Page/index.html#contact">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../Landing%20Page/index.html#about" onclick="toggleMenu()">About</a>
+    <a href="../Landing%20Page/index.html#what-we-do" onclick="toggleMenu()">What We Do</a>
+    <a href="../Landing%20Page/index.html#news" onclick="toggleMenu()">News</a>
+    <a href="index.html" onclick="toggleMenu()">Sponsorship</a>
+    <a href="../Landing%20Page/index.html#contact" onclick="toggleMenu()">Contact</a>
+  </div>
+
+  <main>
+    <section class="sponsorship-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Partner With APINDO</p>
+        <h1>Submit your sponsorship proposal and build meaningful business visibility.</h1>
+        <p class="hero-text">
+          We welcome sponsors who want to collaborate with APINDO through events, programs,
+          business outreach, and strategic partnerships that create mutual value.
+        </p>
+        <div class="hero-actions">
+          <a href="#sponsorship-form" class="btn btn-gold">Apply Now</a>
+          <a href="../Landing%20Page/index.html" class="btn btn-outline">Back to Home</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+          alt="Business team in a sponsorship meeting"
+        />
+        <div class="hero-badge">Designed for event partners, brand supporters, and long-term collaborators</div>
+      </div>
+    </section>
+
+    <section class="impact-strip">
+      <article class="impact-card">
+        <span>01</span>
+        <h2>Visibility</h2>
+        <p>Position your brand alongside APINDO programs, events, and trusted business initiatives.</p>
+      </article>
+      <article class="impact-card">
+        <span>02</span>
+        <h2>Partnership</h2>
+        <p>Create collaborative opportunities through sponsorship packages tailored to your goals.</p>
+      </article>
+      <article class="impact-card">
+        <span>03</span>
+        <h2>Impact</h2>
+        <p>Support meaningful programs while reaching entrepreneurs, employers, and decision-makers.</p>
+      </article>
+    </section>
+
+    <section class="sponsorship-content">
+      <div class="story-card">
+        <p class="section-label">Why sponsor us</p>
+        <h2>Sponsorship with APINDO is built around relevance, reach, and real collaboration.</h2>
+        <p>
+          We work with partners who want to support business growth while also increasing their own
+          visibility. A strong sponsorship proposal helps us understand your objectives, preferred
+          activations, and the kind of partnership experience you want to create.
+        </p>
+
+        <div class="story-image">
+          <img
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80"
+            alt="Professionals discussing a partnership proposal"
+          />
+        </div>
+
+        <div class="support-points">
+          <div>
+            <h3>Events</h3>
+            <p>Align your brand with forums, conferences, and engagement programs led by APINDO.</p>
+          </div>
+          <div>
+            <h3>Exposure</h3>
+            <p>Share your brand with relevant audiences through thoughtful sponsorship placement.</p>
+          </div>
+          <div>
+            <h3>Follow-up</h3>
+            <p>We will review your application and contact you to discuss the next sponsorship steps.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card" id="sponsorship-form">
+        <p class="section-label">Sponsorship application</p>
+        <h2>Send your proposal details and let’s explore the fit.</h2>
+        <p class="form-intro">
+          Fill in the form below with your contact details and a short description of your sponsorship proposal.
+        </p>
+
+        <form class="sponsorship-form" id="sponsorshipApplicationForm">
+          <label for="sponsor-name">Name</label>
+          <input id="sponsor-name" name="name" type="text" placeholder="Your full name" required />
+
+          <label for="sponsor-wa">WA Number</label>
+          <input id="sponsor-wa" name="wa_number" type="tel" placeholder="+62..." required />
+
+          <label for="sponsor-email">Email</label>
+          <input id="sponsor-email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="sponsor-description">Description</label>
+          <textarea id="sponsor-description" name="description" rows="5" placeholder="Tell us about your sponsorship proposal, goals, budget range, or activation idea." required></textarea>
+
+          <button type="submit" class="btn btn-gold btn-submit">Send Sponsorship Application</button>
+          <p class="form-note">This form records your proposal and can be connected to email or a backend later.</p>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-badge footer-logo">APIN<br>DO</div>
+        <h3>APINDO</h3>
+        <p>Asosiasi Pengusaha Indonesia supporting stronger businesses, stronger communities, and sustainable growth.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="../Landing%20Page/index.html">Home</a>
+        <a href="../Landing%20Page/index.html#what-we-do">What We Do</a>
+        <a href="../Landing%20Page/index.html#contact">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:apindobali@gmail.com">apindobali@gmail.com</a>
+        <a href="tel:+032103700945">+0321 - 0370 0945</a>
+        <p>Jl. Masjid No. 3, Renon, Denpasar, Bali 80235</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
