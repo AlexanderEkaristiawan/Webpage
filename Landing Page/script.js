@@ -2,6 +2,16 @@ function toggleMenu() {
   document.getElementById('mobileMenu').classList.toggle('open');
 }
 
+(function () {
+  const loader = document.getElementById('pageLoader');
+  function hideLoader() { loader.classList.add('hidden'); }
+  if (document.readyState === 'complete') {
+    setTimeout(hideLoader, 300);
+  } else {
+    window.addEventListener('load', function () { setTimeout(hideLoader, 300); });
+  }
+})();
+
 // Close mobile menu on outside click
 document.addEventListener('click', function(e) {
   const menu = document.getElementById('mobileMenu');

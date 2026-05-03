@@ -13,7 +13,14 @@
   --nav-h:   72px;
 }
 
-html { scroll-behavior: smooth; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f5f6f8; }
+::-webkit-scrollbar-thumb { background: #1a5fa8; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #0e3d72; }
+
+html { scroll-behavior: smooth;
+  scrollbar-color: #1a5fa8 #f5f6f8; 
+  scrollbar-width: thin; }
 
 body {
   font-family: 'Source Sans 3', sans-serif;
@@ -24,6 +31,45 @@ body {
 
 img { display: block; width: 100%; height: auto; }
 a   { text-decoration: none; color: inherit; }
+
+.page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  transition: opacity .45s ease, visibility .45s ease;
+}
+.page-loader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+.loader-logo { position: relative; width: 72px; height: 72px; }
+.loader-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #1a5fa8;
+  border-right-color: #c9a84c;
+  animation: loader-spin 1s cubic-bezier(.6,.15,.4,.85) infinite;
+}
+.loader-ring--2 {
+  inset: 10px;
+  border-top-color: #c9a84c;
+  border-right-color: #1a5fa8;
+  animation-direction: reverse;
+  animation-duration: .75s;
+}
+.loader-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+@keyframes loader-spin { to { transform: rotate(360deg); } }
 
 /* ── NAVBAR ── */
 nav {
@@ -693,6 +739,75 @@ nav {
   font-size: 14px;
   color: var(--muted);
   line-height: 1.65;
+}
+
+/* ── VISION & MISSION ── */
+.vismis {
+  background: linear-gradient(135deg, var(--blue-dk) 0%, var(--blue) 100%);
+  padding: 72px 5%;
+  text-align: center;
+}
+
+.vismis-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.vismis .section-label { color: var(--gold); margin-bottom: 10px; }
+
+.vismis h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 4vw, 38px);
+  color: #fff;
+  margin-bottom: 48px;
+}
+
+.vismis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.vismis-card {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 14px;
+  padding: 40px 32px;
+  text-align: left;
+  transition: background .25s, transform .25s;
+}
+
+.vismis-card:hover {
+  background: rgba(255,255,255,.14);
+  transform: translateY(-4px);
+}
+
+.vismis-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(255,255,255,.15);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.vismis-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+
+.vismis-card p {
+  font-size: 15px;
+  color: rgba(255,255,255,.82);
+  line-height: 1.75;
+}
+
+@media (max-width: 640px) {
+  .vismis-grid { grid-template-columns: 1fr; }
 }
 
 /* ── TEAM / LEADERSHIP PHOTO ── */
