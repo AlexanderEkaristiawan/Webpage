@@ -75,16 +75,16 @@ nav {
   padding: 2px;
 }
 
-/* Hero logo - larger version */
+/* Hero logo - larger version, responsive */
 .hero-logo {
-  width: 500px;
-  height: 230px;
+  width: clamp(120px, 30vw, 480px);
+  height: clamp(120px, 18vw, 180px);
   background: #fff;
-  border: 4px solid var(--gold);
+  border: 0.4em solid var(--gold);
   border-radius: 12px;
   object-fit: contain;
-  padding: 4px;
-  margin: 0 auto 22px;
+  padding: 0.4em;
+  margin: 0 auto 1.5em;
 }
 
 /* Footer logo */
@@ -840,6 +840,80 @@ footer {
   letter-spacing: .5px;
 }
 
+/* ── AFFILIATES & CONSTITUENT ── */
+.affiliates {
+  padding: 72px 5% 64px;
+  background: #fff;
+  text-align: center;
+}
+
+.affiliates-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.affiliates h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--blue-dk);
+  margin-bottom: 42px;
+}
+
+.affiliates-logos {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(50px, 0.5fr));
+  align-items: center;
+ 
+}
+
+.affiliate-logo {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 8px;
+}
+
+.affiliate-logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 120px;
+  border-radius: 14px;
+  transition: transform .22s ease, box-shadow .22s ease, background-color .22s ease;
+}
+
+.affiliate-logo a:hover,
+.affiliate-logo a:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(26,95,168,.12);
+  background: rgba(26,95,168,.03);
+}
+
+.affiliate-logo a:focus-visible {
+  outline: 2px solid rgba(26,95,168,.35);
+  outline-offset: 3px;
+}
+
+.affiliate-logo img {
+  zoom: 2.2;
+  width: auto;
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.affiliate-logo-ace img { max-height: 68px; }
+.affiliate-logo-cape img { max-height: 56px; }
+.affiliate-logo-aots img { max-height: 64px; }
+.affiliate-logo-ilo img { max-height: 82px; }
+.affiliate-logo-ioe img { max-height: 62px; }
+
 
 /* ── CALL TO ACTION ── */
 .cta-membership {
@@ -865,6 +939,11 @@ footer {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
+  .affiliates-logos {
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+    gap: 22px 18px;
+  }
+
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .news-carousel {
     gap: 10px;
@@ -877,6 +956,22 @@ footer {
 @media (max-width: 640px) {
   .nav-links  { display: none; }
   .hamburger  { display: flex; }
+  .affiliates {
+    padding: 60px 5% 56px;
+  }
+  .affiliates h2 {
+    margin-bottom: 28px;
+  }
+  .affiliates-logos {
+    grid-template-columns: repeat(2, minmax(130px, 1fr));
+    gap: 16px 12px;
+  }
+  .affiliate-logo {
+    min-height: 92px;
+  }
+  .affiliate-logo img {
+    max-height: 58px;
+  }
   .stats { padding-top: 52px; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
   .btn-outline { margin-left: 0; margin-top: 10px; }
