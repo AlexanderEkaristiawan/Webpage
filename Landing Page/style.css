@@ -609,6 +609,75 @@ nav {
   line-height: 1.65;
 }
 
+/* ── VISION & MISSION ── */
+.vismis {
+  background: linear-gradient(135deg, var(--blue-dk) 0%, var(--blue) 100%);
+  padding: 72px 5%;
+  text-align: center;
+}
+
+.vismis-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.vismis .section-label { color: var(--gold); margin-bottom: 10px; }
+
+.vismis h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 4vw, 38px);
+  color: #fff;
+  margin-bottom: 48px;
+}
+
+.vismis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.vismis-card {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 14px;
+  padding: 40px 32px;
+  text-align: left;
+  transition: background .25s, transform .25s;
+}
+
+.vismis-card:hover {
+  background: rgba(255,255,255,.14);
+  transform: translateY(-4px);
+}
+
+.vismis-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(255,255,255,.15);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.vismis-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+
+.vismis-card p {
+  font-size: 15px;
+  color: rgba(255,255,255,.82);
+  line-height: 1.75;
+}
+
+@media (max-width: 640px) {
+  .vismis-grid { grid-template-columns: 1fr; }
+}
+
 /* ── TEAM / LEADERSHIP PHOTO ── */
 .team {
   background: var(--gray);
