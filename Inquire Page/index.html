@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APINDO Inquiry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../Landing Page/index.html" class="nav-logo">
+        <img src="../Asset/logo.png" alt="APINDO Logo" class="logo-img" />
+        <div class="nav-name">
+          <span>ASOSIASI PENGUSAHA INDONESIA</span>
+          <span>Provinsi Bali</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="../Landing Page/index.html#about">About</a></li>
+        <li><a href="../Landing Page/index.html#what-we-do">What We Do</a></li>
+        <li><a href="../Landing Page/index.html#news">News</a></li>
+        <li><a href="../SponsorshipPage/index.html">Sponsorship</a></li>
+        <li><a href="../Landing Page/index.html#contact">Contact</a></li>
+        <li><a href="../Inquire Page/index.html">Inquire</a></li>
+      </ul>
+
+      <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="../Landing Page/index.html#about" onclick="toggleMenu()">About</a>
+      <a href="../Landing Page/index.html#what-we-do" onclick="toggleMenu()">What We Do</a>
+      <a href="../Landing Page/index.html#news" onclick="toggleMenu()">News</a>
+      <a href="../SponsorshipPage/index.html" onclick="toggleMenu()">Sponsorship</a>
+      <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <section class="hero">
+      <img src="../Asset/flower_corner.png" alt="" class="flower-corner flower-corner-top" />
+      <img src="../Asset/flower_corner.png" alt="" class="flower-corner flower-corner-bottom" />
+
+      <div class="hero-inner">
+        <p class="tagline">Inquiry · Hubungi Kami</p>
+        <img src="../Asset/fullLogo_whitebg.png" alt="APINDO Logo" class="hero-logo" />
+
+        <p class="desc">
+          Any questions about membership, events, or partnerships? Please fill out the form below,
+          and the APINDO Bali team will contact you shortly.
+        </p>
+
+        <a href="#contact" class="btn btn-gold">Fill Out Form</a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-shell">
+        <div class="contact-card">
+          <p class="section-label">Inquire</p>
+          <h2>Contact APINDO Bali</h2>
+          <p class="intro">
+            Any questions about membership, events, or partnerships? Please fill out the form below.
+          </p>
+
+          <form id="inquire-form" class="inquire-form" novalidate>
+            <div class="field-row">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="fullName" placeholder="Your Full name" required />
+            </div>
+
+            <div class="field-row">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your email@example.com" required />
+            </div>
+
+            <div class="field-row">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Question title" required />
+            </div>
+
+            <div class="field-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold">Send Message</button>
+            <p id="form-response" class="form-response" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <img src="../Asset/logo.png" alt="APINDO Logo" class="footer-logo" />
+        <div>
+          <h3>APINDO Bali</h3>
+          <p>Asosiasi Pengusaha Indonesia • Provinsi Bali</p>
+          <p>© 2026 APINDO. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
